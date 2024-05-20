@@ -7,15 +7,15 @@
 <input type="week" tabindex="4"> Выбор недели месяца
 <select name="icecream"size="7" multiple>
 <optgroup label="Кто вы?">
-<option selected="selected">Ученик</option>
+<option selected="selected">Взрослый</option>
 </optgroup>
-<optgroup label="В какой школе вы учитесь?">
+<optgroup label="В какой школе вы хотите работать?">
 <option>МБОУ СОШ №8</option>
 <option selected="selected">МАОУ СОШ №11</option>
 <option>МБОУ СОШ №9</option>
 </optgroup>
 </select>
-<p>Образование полное <input type="text" list="edulevel" name="education">
+<p>Образование полное<input type="text" list="edulevel" name="education">
 <datalist id="edulevel">
 <option value="Среднее">
 <option value="Средне специальное">
@@ -23,18 +23,19 @@
 </datalist>
 <br>
 <fieldset>
-<p><label>Официальная заявка на конкурс:<br>
-<em>Расскажите нам, за что вы любите эту группу. Пятеро победителей получат пропуск за кулисы!</em><br></label>
+<p><label>Заявка на принятие:<br>
+<em>Расскажите нам, почему вы решили подать заявку в нашу школу, какими способностями вы обладаете?</em><br></label>
 <textarea name="contest_entry" placeholder="150 words or less"></textarea></p>
-<legend>Подписка на рассылку</legend>
+<legend>Подписка на оповещения</legend>
 <ul>
 <li><label>Включите меня в список рассылки<input type="radio" name="list" value="yes" checked="checked"></label></li>
 <li><label>Спасибо, не надо <input type="radio" name="list" value="yes" checked="checked"></label></li>
+<li><label>Позже решу <input type="radio" name="list" value="yes" checked="checked"></label></li>
 </ul>
 </fieldset>
 <fieldset>
-<legend>Информация о подписчике</legend>
-<label for="fio">Информация о ученике:</label>
+<legend>Информация о вас</legend>
+<label for="fio">Ваши данные:</label>
 <hr>
 <label>Пароль<input type="password" name="pswd" maxlength="8" id="formpswd"></label>
 <label>Поле поиска<input type="search"></label>
@@ -42,8 +43,8 @@
 <label>Веб Адрес<input type="url"></label>
 <ol>
 <li><label>Полное имя: <input type="text" name="name" maxlength="5"></label></li>
-<li><label for="email">Почта: </label> <input type="text" name="email" id="email" readonly></li>
-<li><label>Город: <input type="text" name="statenx"></label></li>
+<li><label for="email">Почта:           </label> <input type="text" name="email" id="email"></li>
+<li><label>Город:           <input type="text" name="statenx"></label></li>
 <li><label>Возвраст: <input type="number" name="cnumx" min="1" max="100"></label></li>
 </ol>
 <input type="date" name="имя" value="2013-01-14">
